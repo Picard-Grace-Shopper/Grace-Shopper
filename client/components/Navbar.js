@@ -2,46 +2,48 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { logout } from "../store";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
+// import AppBar from "@mui/material/AppBar";
+// import Box from "@mui/material/Box";
+// import Toolbar from "@mui/material/Toolbar";
+// import IconButton from "@mui/material/IconButton";
+// import Typography from "@mui/material/Typography";
+// import Menu from "@mui/material/Menu";
+// import MenuIcon from "@mui/icons-material/Menu";
+// import Container from "@mui/material/Container";
+// import Avatar from "@mui/material/Avatar";
+// import Button from "@mui/material/Button";
+// import Tooltip from "@mui/material/Tooltip";
+// import MenuItem from "@mui/material/MenuItem";
+// import AdbIcon from "@mui/icons-material/Adb";
+// import CatchingPokemonIcon from "@mui/icons-material/CatchingPokemon";
 
 const pages = ["Home", "Products", ""];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const Navbar = ({ handleClick, isLoggedIn }) => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+const Navbar = (
+  // { handleClick, isLoggedIn }
+  ) => {
+  // const [anchorElNav, setAnchorElNav] = React.useState(null);
+  // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
+  // const handleOpenUserMenu = (event) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
   return (
     <div>
-      <AppBar position="static">
+      {/* <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <CatchingPokemonIcon
@@ -168,18 +170,18 @@ const Navbar = ({ handleClick, isLoggedIn }) => {
         {isLoggedIn ? (
           <div>
             {/* The navbar will show these links after you log in */}
-            <a href="#" onClick={handleClick}>
+            {/* <a href="#" onClick={handleClick}>
               Logout
             </a>
           </div>
-        ) : (
-          <div>
+        ) : ( */}
+          {/* <div>
             {/* The navbar will show these links before you log in */}
-            <Link to="/login">Login</Link>
-            <Link to="/signup">Sign Up</Link>
-          </div>
-        )}
-      <hr />
+            {/* <Link to="/login">Login</Link>
+            <Link to="/signup">Sign Up</Link> */}
+          {/* </div>
+        )} */}
+      {/* <hr /> */}
     </div>
   );
 };

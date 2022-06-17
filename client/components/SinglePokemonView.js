@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import * as React from 'react';
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
+// import Button from '@mui/material/Button';
+// import Menu from '@mui/material/Menu';
+// import MenuItem from '@mui/material/MenuItem';
 
 function SinglePokemonView() {
   const [pokemon, setPokemon] = useState([]);
@@ -26,18 +26,18 @@ function SinglePokemonView() {
 
 
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const [quantity, setQuantity] = useState(1);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
+  // const [anchorEl, setAnchorEl] = React.useState(null);
+  // const open = Boolean(anchorEl);
+  // const [quantity, setQuantity] = useState(1);
+  // const handleClick = (event) => {
+  //   setAnchorEl(event.currentTarget);
 
-  };
-  const handleClose= (event) => {
-    setAnchorEl(null);
-    setQuantity(event.quantity)
+  // };
+  // const handleClose= (event) => {
+  //   setAnchorEl(null);
+  //   setQuantity(event.quantity)
 
-  };
+  // };
 
 
 
@@ -51,7 +51,7 @@ function SinglePokemonView() {
         <p> Description: {pokemon.description} </p>
         <p> Quantity: {pokemon.quantity}</p>
       </div>
-      <Button
+      {/* <Button
         id="basic-button"
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
@@ -73,7 +73,7 @@ function SinglePokemonView() {
         <MenuItem onClick={handleClose} quantity={1}>1</MenuItem>
         <MenuItem onClick={handleClose} quantity={2}>2</MenuItem>
         <MenuItem onClick={handleClose} quantity={3}>3</MenuItem>
-      </Menu>
+      </Menu> */}
 
       <button className="addToCart">Add to Cart | Only {pokemon.quantity} Available</button>
     </div>
