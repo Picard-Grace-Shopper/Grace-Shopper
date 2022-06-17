@@ -8,11 +8,11 @@ const Product = db.define('product', {
     allowNull: false,
   },
   type: {
-    type: Sequelize.ARRAY(Sequelize.STRING),
+    type: Sequelize.STRING,
   },
   imageUrl: {
     type: Sequelize.STRING,
-    defaultValue: 'https://png.pngitem.com/pimgs/s/46-468761_pikachu-png-transparent-image-pikachu-png-png-download.png',
+    defaultValue: 'https://i.kym-cdn.com/photos/images/facebook/000/879/453/52c.png',
   },
   price: {
     type: Sequelize.INTEGER,
