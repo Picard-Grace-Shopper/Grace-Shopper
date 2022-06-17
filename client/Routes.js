@@ -7,6 +7,7 @@ import {me} from './store'
 import AllPokemonView from './components/AllPokemonView'
 import SinglePokemonView from './components/SinglePokemonView';
 
+
 /**
  * COMPONENT
  */
@@ -61,4 +62,4 @@ const mapDispatch = dispatch => {
 
 // The `withRouter` wrapper makes sure that updates are not blocked
 // when the url changes
-export default connect(mapState, mapDispatch)(Routes)
+export default withRouter(connect(mapState, mapDispatch)(Routes))
