@@ -25,7 +25,7 @@ function AllPokemonView() {
     <>
       {type !== 'All'
         ? pokemon
-            .filter((pokemon) => pokemon.type === type)
+            .filter((pokemon) => pokemon.type.includes(type))
             .map((pokemon) => {
               return (
                 <div key={pokemon.id}>
