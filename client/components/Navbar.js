@@ -43,6 +43,8 @@ const Navbar = (
 
   return (
     <div>
+      <Link to={`/products`}>All Pokemon</Link>
+
       {/* <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
